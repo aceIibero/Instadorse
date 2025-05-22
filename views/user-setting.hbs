@@ -1,0 +1,58 @@
+<div class="container mt-5">
+        <h2 class="mb-4 text-center">User Profile</h2>
+
+        <div class="row">
+            <!-- Profile Picture and Account Details Section -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body text-center">
+                        {{!-- <img src="https://placehold.co/100x100" class="rounded-circle mb-3" alt="Profile Picture" style="width: 150px; height: 150px;">
+                        <form>
+                            <input type="file" class="form-control mb-2" id="profilePicture">
+                            <button type="submit" class="btn btn-primary mb-3">Upload Photo</button>
+                        </form> --}}
+                        <h4>Account Details</h4>
+                        <p><strong>Username:</strong> johndoe</p>
+                        <p><strong>Email:</strong> johndoe@example.com</p>
+                    </div>
+                </div>
+
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <form>
+                            <h4>Update Email</h4>
+                            <div class="mb-3">
+                                <label for="newEmail" class="form-label">New Email Address</label>
+                                <input type="email" class="form-control" id="newEmail" placeholder="Enter new email">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Update Email</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Update Password Section -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <form>
+                            <h4>Update Password</h4>
+                            <div class="mb-3">
+                                <label for="currentPassword" class="form-label">Current Password</label>
+                                <input type="password" class="form-control" id="currentPassword" placeholder="Enter current password">
+                            </div>
+                            <div class="mb-3">
+                                <label for="newPassword" class="form-label">New Password</label>
+                                <input type="password" class="form-control" id="newPassword" placeholder="Enter new password">
+                            </div>
+                            <div class="mb-3">
+                                <label for="confirmPassword" class="form-label">Confirm New Password</label>
+                                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm new password">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Update Password</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
