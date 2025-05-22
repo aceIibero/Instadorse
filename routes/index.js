@@ -255,4 +255,23 @@ router.get("/profile/add", (req, res) => {
   });
 
 
+  router.get("/categories/:id/delete", (req, res) => {
+
+    const id = req.params.id;
+    db.query(`DELETE FROM categories WHERE id = ?`, [id], (err, result) => {
+      if (err) {
+        console.error(err);
+        res.status(500).send("Error deleting category");
+      } else {
+        res.redirect("/manage-category");
+      }
+    });
+
+  // redirect to manage-category
+  res.redirect("/manage-category");
+  });
+
+  
+
+
 module.exports = router;
