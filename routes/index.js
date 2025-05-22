@@ -246,4 +246,13 @@ router.get("/profile/add", (req, res) => {
     });
   });
 
+  router.get("/contact", (req, res) => {
+    
+    res.render("contact", {
+      title: "Home",
+      message: "Welcome to the Home Page",
+    });
+  });
+
+
 module.exports = router;
